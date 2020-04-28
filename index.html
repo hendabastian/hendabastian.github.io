@@ -20,9 +20,8 @@
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
   <!-- <link rel="stylesheet" href="assets/slick/slick-theme.css"> -->
-  <link
-        href="assets/css/hnd.css"
-        rel="stylesheet" />
+  <link href="assets/css/hnd-min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/animate.css">
   <style>
     .slick-dots {
       position: absolute;
@@ -106,40 +105,74 @@
       opacity: .75;
       color: #D84FD4;
     }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px white;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #1D8CF8;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0d6dcb;
+      border-radius: 10px;
+    }
+
+    #topButton {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 20px;
+      /* Place the button at the bottom of the page */
+      right: 30px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      
+    }
   </style>
 </head>
 
 <body class="presentation-page">
   <div class="wrapper" id="wrapper">
     <section id="header">
-      <div class="container-fluid">
-        <div class="page-header">
-          <img src="assets/img/blob.png" class="path" />
-          <img src="assets/img/path2.png" class="path2" />
-          <img src="assets/img/triunghiuri.png" class="shapes triangle" />
-          <img src="assets/img/waves.png" class="shapes wave" />
-          <img src="assets/img/patrat.png" class="shapes squares" />
-          <img src="assets/img/cercuri.png" class="shapes circle" />
-          <div class="container">
-            <div class="content-center">
-              <h1 class="h1-seo">
-                <b class="text-info">HENDA</b> <br />
-                Bastian
-              </h1>
-              <h3>
-                Software Engineer // Web Developer <br />
-                UI-UX Designer // System Analyst
-              </h3>
-              <a
-                 href="#skills"
-                 class="btn btn-primary btn-simple btn-lg mx-5">Skills</a>
-              <a
-                 href="#portfolio"
-                 class="btn btn-success btn-simple btn-lg ms-5">Portfolios</a>
-              <a
-                 href="#contact"
-                 class="btn btn-warning btn-simple btn-lg mx-5">Contacts</a>
-            </div>
+      <div class="page-header">
+        <img src="assets/img/blob.png" class="path" />
+        <img src="assets/img/path2.png" class="path2" />
+        <img src="assets/img/triunghiuri.png" class="shapes triangle" />
+        <img src="assets/img/waves.png" class="shapes wave" />
+        <img src="assets/img/patrat.png" class="shapes squares" />
+        <img src="assets/img/cercuri.png" class="shapes circle" />
+        <div class="container">
+          <div class="content-center">
+            <h1 class="h1-seo">
+              <b class="text-info">HENDA</b> <br />
+              Bastian
+            </h1>
+            <h3>
+              Software Engineer // Web Developer <br />
+              UI-UX Designer // System Analyst
+            </h3>
+            <a
+               href="#skills"
+               class="btn btn-primary btn-simple btn-lg mx-5">Skills</a>
+            <a
+               href="#portfolio"
+               class="btn btn-success btn-simple btn-lg ms-5">Portfolios</a>
+            <a
+               href="#contact"
+               class="btn btn-warning btn-simple btn-lg mx-5">Contacts</a>
           </div>
         </div>
       </div>
@@ -489,7 +522,7 @@
             <div class="row">
               <div
                    class="col-lg-5 col-md-8 col-12 ml-auto mr-auto text-center">
-                <h1 class="title">Portfolio</h1>
+                <h1 class="title">Portfolios</h1>
                 <h3 class="category text-info">
                   <strong>Projects done</strong>
                 </h3>
@@ -687,6 +720,7 @@
       </div>
     </section>
     <div class="space-110"></div>
+    <button onclick="topFunction()" id="topButton" class="btn btn-danger btn-simple animated slideInUp faster" title="Go to top"><i class="far fa-arrow-alt-circle-up" style="font-size: 24pt;"></i></button>
   </div>
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
@@ -742,6 +776,26 @@
         ]
       });
     });
+
+    //Get the button
+    var topButton= document.getElementById("topButton");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
 </body>
 

@@ -14,23 +14,99 @@
   <title>
     Henda Bastian
   </title>
-
-  <!--     Fonts and icons     -->
   <link
         href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
         rel="stylesheet" />
-
-  <script src="https://kit.fontawesome.com/01c599dc23.js" crossorigin="anonymous"></script>
-  <!-- Nucleo Icons -->
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-
-  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <!-- <link rel="stylesheet" href="assets/slick/slick-theme.css"> -->
   <link
-        href="assets/css/blk-design-system-pro.mine209.css?v=1.0.0"
+        href="assets/css/hnd.css"
         rel="stylesheet" />
+  <style>
+    .slick-dots {
+      position: absolute;
+      bottom: -25px;
 
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="assets/demo/demo.css" rel="stylesheet" />
+      display: block;
+
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      list-style: none;
+
+      text-align: center;
+    }
+
+    .slick-dots li {
+      position: relative;
+
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+
+      cursor: pointer;
+    }
+
+    .slick-dots li button {
+      font-size: 0;
+      line-height: 0;
+
+      display: block;
+
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+
+      cursor: pointer;
+
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+    }
+
+    .slick-dots li button:hover,
+    .slick-dots li button:focus {
+      outline: none;
+    }
+
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before {
+      opacity: 1;
+    }
+
+    .slick-dots li button:before {
+      font-family: 'slick';
+      font-size: 24px;
+      line-height: 20px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 20px;
+      height: 20px;
+
+      content: '•';
+      text-align: center;
+
+      opacity: .25;
+      color: #F4F4F6;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-dots li.slick-active button:before {
+      opacity: .75;
+      color: #D84FD4;
+    }
+  </style>
 </head>
 
 <body class="presentation-page">
@@ -477,7 +553,6 @@
                   </div>
                   <div>
                     <div class="card">
-
                       <div class="card-body">
                         <h3 class="card-title">Sistem Informasi Point of Sales & Inventory Management</h3>
                         <h4 class="text-primary">Apotik Luhur Medika Center</h4>
@@ -513,7 +588,7 @@
                     <div class="card">
                       <div class="card-body">
                         <h3 class="card-title">Sistem Perizinan Online Angkutan Multimoda (SPIONAM)</h3>
-                        <h4 class="text-primary">Dinas Perhubungan Provinsi Jawa Barat</h4>
+                        <h4 class="text-primary">Kementerian Perhubungan Republik Indonesia</h4>
                         <h5>
                           Web Developer
                         </h5>
@@ -542,7 +617,6 @@
                       </div>
                     </div>
                   </div>
-
                 </section>
                 <section id="contact">
                   <div class="contactus-3">
@@ -551,26 +625,53 @@
                     </div>
                     <div class="container">
                       <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-3">
                           <div class="info info-hover">
                             <div class="icon icon-info">
                               <img class="bg-blob" src="assets/img/feature-blob/info.png">
                               <i class="fab fa-linkedin"></i>
                             </div>
                             <h4 class="info-title">LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/henda-bastian/" class="description">Henda Bastian</p>
+                            <a href="https://www.linkedin.com/in/henda-bastian/" class="description">Henda Bastian</p></a>
                           </div>
                         </div>
-                        <div class="col-lg-6">
+
+                        <div class="col-lg-3">
                           <div class="info info-hover">
-                            <div class="icon icon-danger">
-                              <img class="bg-blob" src="assets/img/feature-blob/danger.png">
+                            <div class="icon icon-success">
+                              <img class="bg-blob" src="assets/img/feature-blob/success.png">
                               <i class="fas fa-at"></i>
                             </div>
                             <h4 class="info-title">Email</h4>
                             <p class="description"><a href="mailto:hendabast@gmail.com"
                                  class="__cf_email__"
                                  data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">[email&#160;protected]</a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="info info-hover">
+                            <div class="icon icon-info">
+                              <img class="bg-blob" src="assets/img/feature-blob/info.png">
+                              <i class="fab fa-twitter"></i>
+                            </div>
+                            <h4 class="info-title">Twtitter</h4>
+                            <p class="description"><a href="https://twitter.com/HendaBastian"
+                                 class="__cf_email__"
+                                 data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">@HendaBastian</a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="info info-hover">
+                            <div class="icon icon-danger">
+                              <img class="bg-blob" src="assets/img/feature-blob/primary.png">
+                              <i class="fab fa-instagram"></i>
+                            </div>
+                            <h4 class="info-title">Instagram</h4>
+                            <p class="description"><a href="https://www.instagram.com/hendabastian/"
+                                 class="__cf_email__"
+                                 data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">@hendabastian</a>
                             </p>
                           </div>
                         </div>
@@ -586,63 +687,39 @@
     </section>
     <div class="space-110"></div>
   </div>
-  <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
   <script
           src="assets/js/core/bootstrap.min.js"
           type="text/javascript"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
   <script src="assets/js/plugins/bootstrap-switch.js"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script
           src="assets/js/plugins/nouislider.min.js"
           type="text/javascript"></script>
-  <!--  Plugin for the Carousel, full documentation here: http://kenwheeler.github.io/slick/ -->
   <script src="assets/js/plugins/slick.js" type="text/javascript"></script>
-  <!--  Plugin for the blob animation -->
   <script
           src="assets/js/plugins/anime.min.js"
           type="text/javascript"></script>
-  <!-- Chart JS -->
-  <script src="assets/js/plugins/chartjs.min.js"></script>
-  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-  <script src="assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
   <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
-  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
   <script
           src="assets/js/plugins/bootstrap-selectpicker.js"
           type="text/javascript"></script>
-  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
   <script
           src="assets/js/plugins/bootstrap-datetimepicker.js"
           type="text/javascript"></script>
-  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
   <script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
-  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
-  <script src="assets/demo/demo.js"></script>
-  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
-  <!-- Place this tag in your head or just before your close body tag. -->
   <script
           src="assets/js/blk-design-system-pro.mine209.js?v=1.0.0"
           type="text/javascript"></script>
-  <!-- Sharrre libray -->
   <script src="assets/demo/jquery.sharrre.js"></script>
-  <noscript>
-    <img
-         height="1"
-         width="1"
-         style="display: none;"
-         src="https://www.facebook.com/tr?id=111649226022273&amp;ev=PageView&amp;noscript=1" />
-  </noscript>
+
   <script>
     $(document).ready(function () {
       // Carousel
 
       $('.center').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         centerMode: true,
         slidesToShow: 4,
@@ -670,9 +747,6 @@
               slidesToScroll: 1
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
       });
     });

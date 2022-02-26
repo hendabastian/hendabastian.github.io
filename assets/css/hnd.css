@@ -20352,7 +20352,7 @@
  }
 
  .presentation-page .page-header {
-     height: 100vh
+     /* height: 100vh */
  }
 
  .presentation-page .page-header .h1-seo {

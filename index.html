@@ -2,801 +2,815 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link
-        rel="apple-touch-icon"
-        sizes="76x76"
-        href="assets/img/apple-icon.png" />
-  <link rel="icon" type="image/png" href="assets/icon/dev.webp" />
-  <title>
-    Henda Bastian
-  </title>
-  <link
-        href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
-        rel="stylesheet" />
-  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-  <!-- <link rel="stylesheet" href="assets/slick/slick-theme.css"> -->
-  <link href="assets/css/hnd-min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <style>
-    .slick-dots {
-      position: absolute;
-      bottom: -25px;
+    <meta charset="utf-8" />
+    <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="assets/icon/dev.webp" />
+    <title>
+        Henda Bastian
+    </title>
+    <link
+          href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
+          rel="stylesheet" />
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/slick/slick-theme.css"> -->
+    <link href="assets/css/hnd.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <style>
+        .slick-dots {
+            position: absolute;
+            bottom: -25px;
 
-      display: block;
+            display: block;
 
-      width: 100%;
-      padding: 0;
-      margin: 0;
+            width: 100%;
+            padding: 0;
+            margin: 0;
 
-      list-style: none;
+            list-style: none;
 
-      text-align: center;
-    }
+            text-align: center;
+        }
 
-    .slick-dots li {
-      position: relative;
+        .slick-dots li {
+            position: relative;
 
-      display: inline-block;
+            display: inline-block;
 
-      width: 20px;
-      height: 20px;
-      margin: 0 5px;
-      padding: 0;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
 
-      cursor: pointer;
-    }
+            cursor: pointer;
+        }
 
-    .slick-dots li button {
-      font-size: 0;
-      line-height: 0;
+        .slick-dots li button {
+            font-size: 0;
+            line-height: 0;
 
-      display: block;
+            display: block;
 
-      width: 20px;
-      height: 20px;
-      padding: 5px;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
 
-      cursor: pointer;
+            cursor: pointer;
 
-      color: transparent;
-      border: 0;
-      outline: none;
-      background: transparent;
-    }
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+        }
 
-    .slick-dots li button:hover,
-    .slick-dots li button:focus {
-      outline: none;
-    }
+        .slick-dots li button:hover,
+        .slick-dots li button:focus {
+            outline: none;
+        }
 
-    .slick-dots li button:hover:before,
-    .slick-dots li button:focus:before {
-      opacity: 1;
-    }
+        .slick-dots li button:hover:before,
+        .slick-dots li button:focus:before {
+            opacity: 1;
+        }
 
-    .slick-dots li button:before {
-      font-family: 'slick';
-      font-size: 24px;
-      line-height: 20px;
+        .slick-dots li button:before {
+            font-family: 'slick';
+            font-size: 24px;
+            line-height: 20px;
 
-      position: absolute;
-      top: 0;
-      left: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
 
-      width: 20px;
-      height: 20px;
+            width: 20px;
+            height: 20px;
 
-      content: '•';
-      text-align: center;
+            content: '•';
+            text-align: center;
 
-      opacity: .25;
-      color: #F4F4F6;
+            opacity: .25;
+            color: #F4F4F6;
 
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-    .slick-dots li.slick-active button:before {
-      opacity: .75;
-      color: #D84FD4;
-    }
+        .slick-dots li.slick-active button:before {
+            opacity: .75;
+            color: #D84FD4;
+        }
 
-    /* width */
-    ::-webkit-scrollbar {
-      width: 12px;
-    }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px white;
-      border-radius: 10px;
-    }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px white;
+            border-radius: 10px;
+        }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #1D8CF8;
-      border-radius: 10px;
-    }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #1D8CF8;
+            border-radius: 10px;
+        }
 
-    ::-webkit-scrollbar-thumb:hover {
-      background: #0d6dcb;
-      border-radius: 10px;
-    }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d6dcb;
+            border-radius: 10px;
+        }
 
-    #topButton {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Fixed/sticky position */
-      bottom: 20px;
-      /* Place the button at the bottom of the page */
-      right: 30px;
-      /* Place the button 30px from the right */
-      z-index: 99;
-      /* Make sure it does not overlap */
-      
-    }
-  </style>
+        #topButton {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+
+        }
+    </style>
 </head>
 
 <body class="presentation-page">
-  <div class="wrapper" id="wrapper">
-    <section id="header">
-      <div class="page-header">
-        <img src="assets/img/blob.png" class="path" />
-        <img src="assets/img/path2.png" class="path2" />
-        <img src="assets/img/triunghiuri.png" class="shapes triangle" />
-        <img src="assets/img/waves.png" class="shapes wave" />
-        <img src="assets/img/patrat.png" class="shapes squares" />
-        <img src="assets/img/cercuri.png" class="shapes circle" />
-        <div class="container">
-          <div class="content-center">
-            <h1 class="h1-seo">
-              <b class="text-info">HENDA</b> <br />
-              Bastian
-            </h1>
-            <h3>
-              Software Engineer // Web Developer <br />
-              UI-UX Designer // System Analyst
-            </h3>
-            <a
-               href="#skills"
-               class="btn btn-primary btn-simple btn-lg mx-5">Skills</a>
-            <a
-               href="#portfolio"
-               class="btn btn-success btn-simple btn-lg ms-5">Portfolios</a>
-            <a
-               href="#contact"
-               class="btn btn-warning btn-simple btn-lg mx-5">Contacts</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="projects-2 project-raised">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 ml-auto mr-auto text-center mb-5">
-              <h2 class="title">Skills</h2>
-              <div class="section-space"></div>
-            </div>
-          </div>
-          <ul class="nav nav-pills nav-pills-primary nav-pills-icons
-						nav-pills-lg justify-content-center" role="tablist">
-            <li class="nav-item">
-              <a
-                 class="nav-link active"
-                 data-toggle="tab"
-                 href="#programming"
-                 role="tablist">
-                <i class="fas fa-code"></i> Programming
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                 class="nav-link"
-                 data-toggle="tab"
-                 href="#design"
-                 role="tablist">
-                <i class="fas fa-palette"></i> Design
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                 class="nav-link"
-                 data-toggle="tab"
-                 href="#miscellaneous"
-                 role="tablist">
-                <i class="fas fa-laptop"></i> Miscellaneous
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="programming">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Node.js</h3>
-                        <img src="/assets/icon/nodejs.svg" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>express.js</h3>
-                        <img src="/assets//icon/expressjs.svg" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Vue.js</h3>
-                        <img src="/assets//icon/vue.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>React.js</h3>
-                        <img src="/assets//icon/react.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>PHP</h3>
-                        <div style="height: 110px;">
-                          <img src="/assets//icon/php.png">
+    <div class="wrapper" id="wrapper">
+        <section id="header">
+            <div class="page-header">
+                <img src="assets/img/blob.png" class="path" />
+                <img src="assets/img/path2.png" class="path2" />
+                <img src="assets/img/triunghiuri.png" class="shapes triangle" />
+                <img src="assets/img/waves.png" class="shapes wave" />
+                <img src="assets/img/patrat.png" class="shapes squares" />
+                <img src="assets/img/cercuri.png" class="shapes circle" />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-9">
+                            <h2>Hello.</h2>
+                            <h1 class="h1-seo">
+                                I'm
+                                <b class="text-info">Henda Bastian</b>
+                            </h1>
+                            <h3>I am full-stack developer with 5 years of experience developing desktop, mobile &
+                                web-apps with highly adaptable in various programming languages, tools and framework.
+                            </h3>
+                            <h3>
+                                Most of my works has been done and used by enterprise companies, government & public
+                                services. I have been done <b class="text-success">21 Projects</b> so far & still
+                                counting. </h3>
+                            <h3>If you interested to work, discuss & learn together with me, feel free to get in touch.
+                            </h3>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Laravel</h3>
-                        <img src="/assets//icon/laravel.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Yii2</h3>
-                        <img src="/assets//icon/yii.png" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>CodeIgniter</h3>
-                        <img src="/assets//icon/ci.png" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Dart</h3>
-                        <img src="/assets//icon/dart.png" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Flutter</h3>
-                        <img src="/assets/icon/flutter.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>MongoDB</h3>
-                        <img src="/assets/icon/mongodb.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>MySQL</h3>
-                        <img src="/assets/icon/mysql.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>PostgreSQL</h3>
-                        <img src="/assets/icon/postgre.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Git</h3>
-                        <img src="/assets/icon/git.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Docker</h3>
-                        <img src="/assets/icon/docker.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Selenium</h3>
-                        <img src="/assets/icon/selenium.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="tab-pane" id="design">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Adobe XD</h3>
-                        <img src="/assets/icon/adobexd.png" alt="" height="110">
-                      </div>
+        </section>
+        <section id="skills" style="display: none;">
+            <div class="projects-2 project-raised">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ml-auto mr-auto text-center mb-5">
+                            <h2 class="title">Skills</h2>
+                            <div class="section-space"></div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Adobe Photoshop</h3>
-                        <img src="/assets/icon/photoshop.png" alt="" height="110">
-                      </div>
+                    <ul class="nav nav-pills nav-pills-primary nav-pills-icons
+						nav-pills-lg justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a
+                               class="nav-link active"
+                               data-toggle="tab"
+                               href="#programming"
+                               role="tablist">
+                                <i class="fas fa-code"></i> Programming
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                               class="nav-link"
+                               data-toggle="tab"
+                               href="#design"
+                               role="tablist">
+                                <i class="fas fa-palette"></i> Design
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                               class="nav-link"
+                               data-toggle="tab"
+                               href="#miscellaneous"
+                               role="tablist">
+                                <i class="fas fa-laptop"></i> Miscellaneous
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content tab-space">
+                        <div class="tab-pane active" id="programming">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Node.js</h3>
+                                                <img src="/assets/icon/nodejs.svg" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>express.js</h3>
+                                                <img src="/assets//icon/expressjs.svg" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Vue.js</h3>
+                                                <img src="/assets//icon/vue.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>React.js</h3>
+                                                <img src="/assets//icon/react.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>PHP</h3>
+                                                <div style="height: 110px;">
+                                                    <img src="/assets//icon/php.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Laravel</h3>
+                                                <img src="/assets//icon/laravel.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Yii2</h3>
+                                                <img src="/assets//icon/yii.png" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>CodeIgniter</h3>
+                                                <img src="/assets//icon/ci.png" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Dart</h3>
+                                                <img src="/assets//icon/dart.png" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Flutter</h3>
+                                                <img src="/assets/icon/flutter.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>MongoDB</h3>
+                                                <img src="/assets/icon/mongodb.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>MySQL</h3>
+                                                <img src="/assets/icon/mysql.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>PostgreSQL</h3>
+                                                <img src="/assets/icon/postgre.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Git</h3>
+                                                <img src="/assets/icon/git.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Docker</h3>
+                                                <img src="/assets/icon/docker.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Selenium</h3>
+                                                <img src="/assets/icon/selenium.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="design">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Adobe XD</h3>
+                                                <img src="/assets/icon/adobexd.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Adobe Photoshop</h3>
+                                                <img src="/assets/icon/photoshop.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Adobe Illustrator</h3>
+                                                <img src="/assets/icon/illustrator.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Adobe Dreamweaver</h3>
+                                                <img src="/assets/icon/dreamweaver.png" alt="" height="110"
+                                                     style="padding-top: -30px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="miscellaneous">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Project Management</h3>
+                                                <img src="/assets/icon/scrum.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Google Docs Suite</h3>
+                                                <img src="/assets/icon/gdocs.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>MS Office Suite</h3>
+                                                <img src="/assets/icon/office.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Adobe Premiere</h3>
+                                                <img src="/assets/icon/premiere.svg" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Adobe Audition</h3>
+                                                <img src="/assets/icon/audition.svg" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Wordpress</h3>
+                                                <img src="/assets/icon/wordpress.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Windows OS</h3>
+                                                <img src="/assets/icon/windows.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h3>Linux OS</h3>
+                                                <img src="/assets/icon/linux.png" alt="" height="110">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Adobe Illustrator</h3>
-                        <img src="/assets/icon/illustrator.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Adobe Dreamweaver</h3>
-                        <img src="/assets/icon/dreamweaver.png" alt="" height="110" style="padding-top: -30px;">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="tab-pane" id="miscellaneous">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Project Management</h3>
-                        <img src="/assets/icon/scrum.png" alt="" height="110">
-                      </div>
+        </section>
+        <section id="portfolio" style="display: none;">
+            <div class="section section-cards">
+                <div class="content-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div
+                                 class="col-lg-5 col-md-8 col-12 ml-auto mr-auto text-center">
+                                <h1 class="title">Portfolios</h1>
+                                <h3 class="category text-info">
+                                    <strong>Projects done</strong>
+                                </h3>
+                            </div>
+                            <div class="col-md-12 col-md-6">
+                                <section class="center slider">
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Informasi Komersialisasi & Penerimaan
+                                                    Migas</h3>
+                                                <h4 class="text-primary">SKK Migas</h4>
+                                                <h5>
+                                                    Quality Assurance & Technical Writer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Informasi Inventory Gas LPG</h3>
+                                                <h4 class="text-primary">PT. Agung Jaya Abadi</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Informasi Asrama Gunung Tajam</h3>
+                                                <h4 class="text-primary">Badan Pengurus Asrama Mahasiswa Belitung
+                                                    (BPAMB)</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Informasi Point of Sales</h3>
+                                                <h4 class="text-primary">Madness Football Supply</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Website E-Catalogue Perumahan</h3>
+                                                <h4 class="text-primary">PT. Rigani Karya Jaya</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Informasi Point of Sales & Inventory
+                                                    Management</h3>
+                                                <h4 class="text-primary">Apotik Luhur Medika Center</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Informasi Inventory Control</h3>
+                                                <h4 class="text-primary">PT. Tangan Eskalasi Mahakarsa (TESMAK)</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Pelayanan Angkutan Darat Provinsi Jawa
+                                                    Barat (SPIONJABAR)</h3>
+                                                <h4 class="text-primary">Dinas Perhubungan Provinsi Jawa Barat</h4>
+                                                <h5>
+                                                    Project Manager & Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Sistem Perizinan Online Angkutan Multimoda
+                                                    (SPIONAM)</h3>
+                                                <h4 class="text-primary">Kementerian Perhubungan Republik Indonesia</h4>
+                                                <h5>
+                                                    Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Aplikasi Pencatatan Elektronik E-Logbook</h3>
+                                                <h4 class="text-primary">Kementerian Perhubungan Republik Indonesia</h4>
+                                                <h5>
+                                                    Mobile Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Aplikasi Absensi Online</h3>
+                                                <h4 class="text-primary">PT. Ziebar</h4>
+                                                <h5>
+                                                    Back-End Web Developer
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Google Docs Suite</h3>
-                        <img src="/assets/icon/gdocs.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>MS Office Suite</h3>
-                        <img src="/assets/icon/office.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Adobe Premiere</h3>
-                        <img src="/assets/icon/premiere.svg" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Adobe Audition</h3>
-                        <img src="/assets/icon/audition.svg" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Wordpress</h3>
-                        <img src="/assets/icon/wordpress.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Windows OS</h3>
-                        <img src="/assets/icon/windows.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h3>Linux OS</h3>
-                        <img src="/assets/icon/linux.png" alt="" height="110">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="portfolio">
-      <div class="section section-cards">
-        <div class="content-center">
-          <div class="container-fluid">
-            <div class="row">
-              <div
-                   class="col-lg-5 col-md-8 col-12 ml-auto mr-auto text-center">
-                <h1 class="title">Portfolios</h1>
-                <h3 class="category text-info">
-                  <strong>Projects done</strong>
-                </h3>
-              </div>
-              <div class="col-md-12 col-md-6">
-                <section class="center slider">
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Informasi Komersialisasi & Penerimaan Migas</h3>
-                        <h4 class="text-primary">SKK Migas</h4>
-                        <h5>
-                          Quality Assurance & Technical Writer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Informasi Inventory Gas LPG</h3>
-                        <h4 class="text-primary">PT. Agung Jaya Abadi</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Informasi Asrama Gunung Tajam</h3>
-                        <h4 class="text-primary">Badan Pengurus Asrama Mahasiswa Belitung (BPAMB)</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Informasi Point of Sales</h3>
-                        <h4 class="text-primary">Madness Football Supply</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Website E-Catalogue Perumahan</h3>
-                        <h4 class="text-primary">PT. Rigani Karya Jaya</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Informasi Point of Sales & Inventory Management</h3>
-                        <h4 class="text-primary">Apotik Luhur Medika Center</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Informasi Inventory Control</h3>
-                        <h4 class="text-primary">PT. Tangan Eskalasi Mahakarsa (TESMAK)</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Pelayanan Angkutan Darat Provinsi Jawa Barat (SPIONJABAR)</h3>
-                        <h4 class="text-primary">Dinas Perhubungan Provinsi Jawa Barat</h4>
-                        <h5>
-                          Project Manager & Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Sistem Perizinan Online Angkutan Multimoda (SPIONAM)</h3>
-                        <h4 class="text-primary">Kementerian Perhubungan Republik Indonesia</h4>
-                        <h5>
-                          Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Aplikasi Pencatatan Elektronik E-Logbook</h3>
-                        <h4 class="text-primary">Kementerian Perhubungan Republik Indonesia</h4>
-                        <h5>
-                          Mobile Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Aplikasi Absensi Online</h3>
-                        <h4 class="text-primary">PT. Ziebar</h4>
-                        <h5>
-                          Back-End Web Developer
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section id="contact">
-                  <div class="contactus-3">
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="contactus-3">
                     <div class="row justify-content-center">
-                      <h1>Get In Touch</h1>
+                        <h1>Get In Touch</h1>
                     </div>
                     <div class="container">
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <div class="info info-hover">
-                            <div class="icon icon-info">
-                              <img class="bg-blob" src="assets/img/feature-blob/info.png">
-                              <i class="fab fa-linkedin"></i>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="info info-hover">
+                                    <div class="icon icon-info">
+                                        <img class="bg-blob" src="assets/img/feature-blob/info.png">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <h4 class="info-title">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/henda-bastian/"
+                                       class="description">Henda Bastian</p>
+                                    </a>
+                                </div>
                             </div>
-                            <h4 class="info-title">LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/henda-bastian/" class="description">Henda Bastian</p>
-                            </a>
-                          </div>
-                        </div>
 
-                        <div class="col-lg-3">
-                          <div class="info info-hover">
-                            <div class="icon icon-success">
-                              <img class="bg-blob" src="assets/img/feature-blob/success.png">
-                              <i class="fas fa-at"></i>
+                            <div class="col-lg-3">
+                                <div class="info info-hover">
+                                    <div class="icon icon-success">
+                                        <img class="bg-blob"
+                                             src="assets/img/feature-blob/success.png">
+                                        <i class="fas fa-at"></i>
+                                    </div>
+                                    <h4 class="info-title">Email</h4>
+                                    <p class="description"><a href="mailto:hendabast@gmail.com"
+                                           class="__cf_email__"
+                                           data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">[email&#160;protected]</a>
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="info-title">Email</h4>
-                            <p class="description"><a href="mailto:hendabast@gmail.com"
-                                 class="__cf_email__"
-                                 data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">[email&#160;protected]</a>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="info info-hover">
-                            <div class="icon icon-info">
-                              <img class="bg-blob" src="assets/img/feature-blob/info.png">
-                              <i class="fab fa-twitter"></i>
+                            <div class="col-lg-3">
+                                <div class="info info-hover">
+                                    <div class="icon icon-info">
+                                        <img class="bg-blob" src="assets/img/feature-blob/info.png">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <h4 class="info-title">Twtitter</h4>
+                                    <p class="description"><a
+                                           href="https://twitter.com/HendaBastian"
+                                           class="__cf_email__"
+                                           data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">@HendaBastian</a>
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="info-title">Twtitter</h4>
-                            <p class="description"><a href="https://twitter.com/HendaBastian"
-                                 class="__cf_email__"
-                                 data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">@HendaBastian</a>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="info info-hover">
-                            <div class="icon icon-danger">
-                              <img class="bg-blob" src="assets/img/feature-blob/primary.png">
-                              <i class="fab fa-instagram"></i>
+                            <div class="col-lg-3">
+                                <div class="info info-hover">
+                                    <div class="icon icon-danger">
+                                        <img class="bg-blob"
+                                             src="assets/img/feature-blob/primary.png">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <h4 class="info-title">Instagram</h4>
+                                    <p class="description"><a
+                                           href="https://www.instagram.com/hendabastian/"
+                                           class="__cf_email__"
+                                           data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">@hendabastian</a>
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="info-title">Instagram</h4>
-                            <p class="description"><a href="https://www.instagram.com/hendabastian/"
-                                 class="__cf_email__"
-                                 data-cfemail="dfacaaafafb0adab9fa6b0aaadbab2beb6b3f1bcb0b2">@hendabastian</a>
-                            </p>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </section>
-              </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="space-110"></div>
-    <button onclick="topFunction()" id="topButton" class="btn btn-danger btn-simple animated slideInUp faster" title="Back to top"><i class="far fa-arrow-alt-circle-up" style="font-size: 24pt;"></i></button>
-  </div>
-  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script
-          src="assets/js/core/bootstrap.min.js"
-          type="text/javascript"></script>
-  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <script src="assets/js/plugins/bootstrap-switch.js"></script>
-  <script
-          src="assets/js/plugins/nouislider.min.js"
-          type="text/javascript"></script>
-  <script src="assets/js/plugins/slick.js" type="text/javascript"></script>
+        </section>
+        <div class="space-110"></div>
+        <button onclick="topFunction()" id="topButton" class="btn btn-danger btn-simple animated slideInUp faster"
+                title="Back to top"><i class="far fa-arrow-alt-circle-up" style="font-size: 24pt;"></i></button>
+    </div>
+    <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script
+            src="assets/js/core/bootstrap.min.js"
+            type="text/javascript"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/js/plugins/bootstrap-switch.js"></script>
+    <script
+            src="assets/js/plugins/nouislider.min.js"
+            type="text/javascript"></script>
+    <script src="assets/js/plugins/slick.js" type="text/javascript"></script>
 
-  <script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
-  <script
-          src="assets/js/blk-design-system-pro.mine209.js?v=1.0.0"
-          type="text/javascript"></script>
-  <script src="assets/demo/jquery.sharrre.js"></script>
+    <script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
+    <script
+            src="assets/js/blk-design-system-pro.mine209.js?v=1.0.0"
+            type="text/javascript"></script>
+    <script src="assets/demo/jquery.sharrre.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      // Carousel
+    <script>
+        $(document).ready(function () {
+            // Carousel
 
-      $('.center').slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true
+            $('.center').slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+        //Get the button
+        var topButton = document.getElementById("topButton");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
             }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });
+        }
 
-    //Get the button
-    var topButton= document.getElementById("topButton");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topButton.style.display = "block";
-      } else {
-        topButton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>

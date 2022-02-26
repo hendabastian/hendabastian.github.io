@@ -21002,9 +21002,9 @@
          margin-top: -25px
      }
 
-     .presentation-page .page-header .h1-seo {
+     /* .presentation-page .page-header .h1-seo {
          margin-top: 150px
-     }
+     } */
 
      .presentation-page .slick-slider .slick-arrow {
          top: -5%;
@@ -22125,7 +22125,7 @@
  }
 
  .page-header .container {
-     height: 100%;
+     /* height: 100%; */
      z-index: 1
  }
 

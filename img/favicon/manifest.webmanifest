@@ -1,0 +1,11 @@
+{
+  "name": "Henda Bastian - Professional Fullstack Developer from Indonesia",
+  "short_name": "HendaBastian",
+  "icons": [
+    { "src": "/img/logo2.svg", "type": "image/svg", "sizes": "192x192" },
+    { "src": "/img/logo2.svg", "type": "image/svg", "sizes": "512x512" }
+  ],
+  "theme_color": "#ededed",
+  "background_color": "#ededed ",
+  "display": "standalone"
+}

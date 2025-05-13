@@ -1,28 +1,41 @@
-$(window).on("load", function() {
-   
+console.log('loaded custom');
+
+// Initialize loading animations
+function initializeLoadingAnimations() {
+  console.log('initializing animations');
   "use strict";
+
+  // --------------------------------------------- //
+  // Preloader Start
+  // --------------------------------------------- //
+  setTimeout(function () {
+    console.log('loaded preloader');
+    $('.preloader').addClass('loaded');
+  }, 1000);
+  // --------------------------------------------- //
+  // Preloader End
+  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Loader & Loading Animation Start
   // --------------------------------------------- //
   $(".loader__logo").addClass('scaleOut');
-
-  setTimeout(function(){
-    $(".loader").addClass('loaded');
-    $("#main").addClass('active animate-in');
-    $('#home-trigger').addClass('active-link');
-  }, 300);
- 
-  setTimeout(function(){
-    $("body").addClass('loaded');
-  }, 950);
+  console.log('loaded loader');
+  $(".loader").addClass('loaded');
+  $("#main").addClass('active animate-in');
+  $('#home-trigger').addClass('active-link');
+  console.log('loaded body');
+  $("body").addClass('loaded');
   // --------------------------------------------- //
   // Loader & Loading Animation End
   // --------------------------------------------- //
+}
 
-});
+// Run on both document ready and window load
+$(document).ready(initializeLoadingAnimations);
+$(window).on("load", initializeLoadingAnimations);
 
-$(function() {
+$(function () {
 
   "use strict";
 
@@ -48,13 +61,13 @@ $(function() {
       delay: 3000,
       disableOnInteraction: false,
     },
-  
+
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -82,28 +95,28 @@ $(function() {
   // Magnific Popup Video Start
   // --------------------------------------------- //
   $('#inner-video-trigger').magnificPopup({
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
     fixedContentPos: false,
     callbacks: {
-      beforeOpen: function() { $('body').addClass('overflow-hidden'); },
-      close: function() { $('body').removeClass('overflow-hidden'); }
+      beforeOpen: function () { $('body').addClass('overflow-hidden'); },
+      close: function () { $('body').removeClass('overflow-hidden'); }
     }
-	});
+  });
 
   $('#showreel-trigger').magnificPopup({
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
     fixedContentPos: false,
     callbacks: {
-      beforeOpen: function() { $('body').addClass('overflow-hidden'); },
-      close: function() { $('body').removeClass('overflow-hidden'); }
+      beforeOpen: function () { $('body').addClass('overflow-hidden'); },
+      close: function () { $('body').removeClass('overflow-hidden'); }
     }
-	});
+  });
   // --------------------------------------------- //
   // Magnific Popup Video End
   // --------------------------------------------- //
@@ -111,8 +124,8 @@ $(function() {
   // --------------------------------------------- //
   // KBW-Countdown Start
   // --------------------------------------------- //
-  $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2024, 5, 27), format: 'D'});
-  $('#countdownLine').countdown({until: $.countdown.UTCDate(+10, 2024, 5, 27), format: 'D'});
+  $('#countdown').countdown({ until: $.countdown.UTCDate(+10, 2024, 5, 27), format: 'D' });
+  $('#countdownLine').countdown({ until: $.countdown.UTCDate(+10, 2024, 5, 27), format: 'D' });
   // --------------------------------------------- //
   // KBW-Countdown End
   // --------------------------------------------- //
@@ -121,7 +134,7 @@ $(function() {
   // Vegas Kenburns Start
   // --------------------------------------------- //
   var bgndKenburns = $('#bgndKenburns');
-  if(bgndKenburns.length){
+  if (bgndKenburns.length) {
     bgndKenburns.vegas({
       timer: false,
       delay: 8000,
@@ -132,7 +145,7 @@ $(function() {
         { src: "https://dummyimage.com/1000x1500/4d4d4d/636363" },
         { src: "https://dummyimage.com/1000x1500/4d4d4d/636363" }
       ],
-      animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
+      animation: ['kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight']
     });
   }
   // --------------------------------------------- //
@@ -148,19 +161,19 @@ $(function() {
   });
 
   function mailchimpCallback(resp) {
-    if(resp.result === 'success') {
+    if (resp.result === 'success') {
       $('.notify').find('.form').addClass('is-hidden');
       $('.notify').find('.subscription-ok').addClass('is-visible');
-      setTimeout(function() {
+      setTimeout(function () {
         // Done Functions
         $('.notify').find('.subscription-ok').removeClass('is-visible');
         $('.notify').find('.form').delay(300).removeClass('is-hidden');
         $('.notify-form').trigger("reset");
       }, 5000);
-    } else if(resp.result === 'error') {
+    } else if (resp.result === 'error') {
       $('.notify').find('.form').addClass('is-hidden');
       $('.notify').find('.subscription-error').addClass('is-visible');
-      setTimeout(function() {
+      setTimeout(function () {
         // Done Functions
         $('.notify').find('.subscription-error').removeClass('is-visible');
         $('.notify').find('.form').delay(300).removeClass('is-hidden');
@@ -175,24 +188,24 @@ $(function() {
   // --------------------------------------------- //
   // Contact Form Start
   // --------------------------------------------- //
-  $("#contact-form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
+  $("#contact-form").submit(function () { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function () {
       $('.contact').find('.form').addClass('is-hidden');
       $('.contact').find('.reply-group').addClass('is-visible');
-			setTimeout(function() {
-				// Done Functions
+      setTimeout(function () {
+        // Done Functions
         $('.contact').find('.reply-group').removeClass('is-visible');
         $('.contact').find('.form').delay(300).removeClass('is-hidden');
-				th.trigger("reset");
-			}, 5000);
-		});
-		return false;
-	});
+        th.trigger("reset");
+      }, 5000);
+    });
+    return false;
+  });
   // --------------------------------------------- //
   // Contact Form End
   // --------------------------------------------- //

@@ -1,30 +1,25 @@
-console.log('loaded custom');
-
+console.log("This isn't Narnia, and there's no magical portal behind this code. 🚪 Just saying. So, spill it. What's the grand purpose of your console expedition?");
 // Initialize loading animations
 function initializeLoadingAnimations() {
-  console.log('initializing animations');
   "use strict";
-
+  console.log("Is this where you thought the free pizza was hiding? Keep searching, champ.");
   // --------------------------------------------- //
   // Preloader Start
   // --------------------------------------------- //
   setTimeout(function () {
-    console.log('loaded preloader');
     $('.preloader').addClass('loaded');
   }, 1000);
   // --------------------------------------------- //
   // Preloader End
   // --------------------------------------------- //
-
+  console.log("🧐 Hmm, so you've ventured into the digital underbelly, have you? 🤔 Are you perhaps on a quest for hidden treasures? 💰 Maybe the legendary 'Inspect Element' easter egg? 🥚 Or are you just *really* bored? 😴 Well, spoiler alert: the magic happens on the *actual* page, not in this shadowy realm of code. 😉 But hey, knock yourself out! ¯\\_(ツ)_/¯ Just don't blame me if you get lost in the matrix. 😜");
   // --------------------------------------------- //
   // Loader & Loading Animation Start
   // --------------------------------------------- //
   $(".loader__logo").addClass('scaleOut');
-  console.log('loaded loader');
   $(".loader").addClass('loaded');
   $("#main").addClass('active animate-in');
   $('#home-trigger').addClass('active-link');
-  console.log('loaded body');
   $("body").addClass('loaded');
   // --------------------------------------------- //
   // Loader & Loading Animation End

@@ -1,0 +1,16 @@
+# Ignore git metadata
+.git
+
+# Ignore node modules and build artifacts
+node_modules
+dist
+build
+
+# Ignore local env / IDE files
+.env
+.vscode
+.DS_Store
+
+# Ignore sass and source files if build artifacts already present
+sass
+src
